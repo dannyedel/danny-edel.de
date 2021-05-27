@@ -2,4 +2,4 @@
 
 set -evx
 
-scp index.html danny-edel.de:public_html/
+rsync -rvPhlt index.html .well-known dannyedelde@danny-edel.de:public_html/
